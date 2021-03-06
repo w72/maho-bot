@@ -1,0 +1,14 @@
+{
+  "name": "maho-bot",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "license": "MIT",
+  "author": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "pnpm start --filter server",
+    "build": "pnpm run build --filter server",
+    "production": "pnpm run production --filter server"
+  }
+}
