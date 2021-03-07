@@ -23,6 +23,7 @@ importers:
       '@typescript-eslint/eslint-plugin': 4.16.1_db289a69270a1846aefbe377c7369d6d
       '@typescript-eslint/parser': 4.16.1_eslint@7.21.0+typescript@4.2.3
       babel-loader: 8.2.2_69db794c318707266a4dc85e46aa7443
+      clean-webpack-plugin: 3.0.0_webpack@5.24.3
       css-loader: 5.1.1_webpack@5.24.3
       eslint: 7.21.0
       eslint-config-prettier: 8.1.0_eslint@7.21.0
@@ -52,6 +53,7 @@ importers:
       '@typescript-eslint/eslint-plugin': ^4.16.1
       '@typescript-eslint/parser': ^4.16.1
       babel-loader: ^8.2.2
+      clean-webpack-plugin: ^3.0.0
       css-loader: ^5.1.1
       eslint: ^7.21.0
       eslint-config-prettier: ^8.1.0
@@ -1022,7 +1024,7 @@ packages:
   /@webpack-cli/configtest/1.0.1_webpack-cli@4.5.0+webpack@5.24.3:
     dependencies:
       webpack: 5.24.3_webpack-cli@4.5.0
-      webpack-cli: 4.5.0_webpack@5.24.3
+      webpack-cli: 4.5.0_f774af0c441c49c6e8411a5ef11200ab
     dev: true
     peerDependencies:
       webpack: 4.x.x || 5.x.x
@@ -1032,7 +1034,7 @@ packages:
   /@webpack-cli/info/1.2.2_webpack-cli@4.5.0:
     dependencies:
       envinfo: 7.7.4
-      webpack-cli: 4.5.0_webpack@5.24.3
+      webpack-cli: 4.5.0_f774af0c441c49c6e8411a5ef11200ab
     dev: true
     peerDependencies:
       webpack-cli: 4.x.x
@@ -2957,6 +2959,20 @@ packages:
     resolution:
       integrity: sha512-zAoAQiudy+r5SvnSw3KJy5os/oRJYHzrzja/tBDqrZtNhUw8bt6y8OBzMWcjWr+8liV8Eb6yOhw8WZ7VFZ5ZzA==
   /follow-redirects/1.13.3:
+    dev: false
+    engines:
+      node: '>=4.0'
+    peerDependencies:
+      debug: '*'
+    peerDependenciesMeta:
+      debug:
+        optional: true
+    resolution:
+      integrity: sha512-DUgl6+HDzB0iEptNQEXLx/KhTmDb8tZUHSeLqpnjpknR70H0nC2t9N73BK6fN4hOvJ84pKlIQVQ4k5FFlBedKA==
+  /follow-redirects/1.13.3_debug@4.3.1:
+    dependencies:
+      debug: 4.3.1_supports-color@6.1.0
+    dev: true
     engines:
       node: '>=4.0'
     peerDependencies:
@@ -3423,7 +3439,7 @@ packages:
   /http-proxy/1.18.1_debug@4.3.1:
     dependencies:
       eventemitter3: 4.0.7
-      follow-redirects: 1.13.3
+      follow-redirects: 1.13.3_debug@4.3.1
       requires-port: 1.0.0
     dev: true
     engines:
@@ -6897,7 +6913,7 @@ packages:
       tapable: 2.2.0
       terser-webpack-plugin: 5.1.1_webpack@5.24.3
       watchpack: 2.1.1
-      webpack-cli: 4.5.0_webpack@5.24.3
+      webpack-cli: 4.5.0_f774af0c441c49c6e8411a5ef11200ab
       webpack-sources: 2.2.0
     dev: true
     engines:

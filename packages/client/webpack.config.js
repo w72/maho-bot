@@ -2,6 +2,7 @@ const path = require('path');
 const ESLintPlugin = require('eslint-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 
@@ -53,6 +54,7 @@ module.exports = {
     new ESLintPlugin(),
     dev && new ReactRefreshWebpackPlugin(),
     !dev && new MiniCssExtractPlugin(),
+    !dev && new CleanWebpackPlugin(),
   ].filter(Boolean),
   experiments: {
     topLevelAwait: true,
