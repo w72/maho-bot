@@ -56,6 +56,9 @@ module.exports = {
     !dev && new MiniCssExtractPlugin(),
     !dev && new CleanWebpackPlugin(),
   ].filter(Boolean),
+  stats: {
+    modules: false,
+  },
   experiments: {
     topLevelAwait: true,
   },
