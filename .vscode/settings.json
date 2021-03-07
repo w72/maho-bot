@@ -5,6 +5,7 @@
     "maho",
     "nestjs",
     "pmmmwh",
-    "pnpm"
+    "pnpm",
+    "typeorm"
   ]
 }
