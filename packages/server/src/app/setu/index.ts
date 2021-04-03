@@ -30,7 +30,7 @@ app.on('message.group', {
   handler: async (e: any) => {
     const keyword = e.$match[1] || e.$match[2] || '';
     const { names } = config;
-    const { apikey, r18, maxWidth, maxHeight, quality } = config.app;
+    const { apikey, r18, maxWidth, maxHeight, quality } = app.config;
     const url = 'https://api.lolicon.app/setu/';
     const params = new URLSearchParams({ apikey, keyword, r18 });
     const res = await assets.remote(`${url}?${params}`).json();
