@@ -1,0 +1,12 @@
+[Unit]
+Description=HoshinoBot Service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=user
+ExecStart=/usr/bin/node /opt/maho-bot/packages/server/dist/server.js
+
+[Install]
+WantedBy=multi-user.target
