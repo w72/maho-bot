@@ -13,7 +13,7 @@ module.exports = {
   mode: dev ? 'development' : 'production',
   watch: dev,
   devtool: false,
-  entry: [dev && 'webpack/hot/poll?1000', './src/main.ts'].filter(Boolean),
+  entry: [dev && 'webpack/hot/poll?1000', './src/index.ts'].filter(Boolean),
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
     plugins: [new TsconfigPathsPlugin()],
@@ -31,6 +31,7 @@ module.exports = {
         options: {
           presets: ['@babel/preset-typescript'],
           plugins: [
+            '@babel/plugin-proposal-class-properties',
             '@babel/plugin-syntax-top-level-await',
             'babel-plugin-transform-typescript-metadata',
             ['@babel/plugin-proposal-decorators', { legacy: true }],

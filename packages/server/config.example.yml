@@ -1,0 +1,17 @@
+url: ws://192.168.1.108:6700/
+names:
+  - 优衣
+  - ue
+admins:
+  - 10000
+groups:
+  - 10000
+apps:
+  pcr-gacha:
+    pool: BL
+  setu:
+    apikey: aaaaaaaaaaaaa
+    r18: 0
+    maxWidth: 1000,
+    maxHeight: 1000,
+    quality: 60

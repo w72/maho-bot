@@ -1,0 +1,12 @@
+/config.yml
+/res/
+/res.7z
+/res.zip
+/src/app/*
+/*.db
+!/src/app/meme
+!/src/app/message
+!/src/app/pcr-gacha
+!/src/app/pcr-lucky
+!/src/app/setu
+!/src/app/nbnhhsh

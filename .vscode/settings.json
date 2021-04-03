@@ -1,11 +1,16 @@
 {
   "cSpell.words": [
     "allowlist",
+    "chcp",
     "luxon",
     "maho",
+    "msyh",
     "nestjs",
+    "onebot",
+    "pino",
     "pmmmwh",
     "pnpm",
+    "retcode",
     "typeorm"
   ]
 }
