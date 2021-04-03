@@ -23,11 +23,11 @@ export default class App {
     return assets(this.id, path);
   }
 
-  on(listen: string, event: any) {
+  on(listen: string, event: Record<string, any>) {
     this.events.push({ listen, ...event });
   }
 
-  cron(schedule: string, cron: any) {
+  cron(schedule: string, cron: Record<string, any>) {
     this.crons.push({ schedule, ...cron });
   }
 }
